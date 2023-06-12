@@ -4,7 +4,7 @@
 ![Statamic 4.0+](https://img.shields.io/badge/Statamic-4.0+-FF269E?style=for-the-badge&link=https://statamic.com)
 <!-- /statamic:hide -->
 
-The Flexible Width Fieldtype for Statamic allows easy control of any content area or media element width. It offers more flexibility than the default "Width" Fieldtype, supporting any key-value pairs.
+> The Flexible Width Fieldtype for Statamic allows easy control of any content area or media element width. It offers more flexibility than the default "Width" Fieldtype, supporting any key-value pairs.
 
 <img src="images/fieldtype-features.gif" />
 
@@ -50,9 +50,14 @@ Use the augmented value in your template:
 </div>
 ```
 
+## Need support with your Statamic project?
+
+> 👋 Hey, I'm Oli, creative nerd & full-stack developer based in Berlin. If you need any help with your Statamic or web project, let me know! I've been doing this for over 10 years, so I've got you covered.
+> Let's have a chat: mail@olivermesieh.com
+
 ## Buy me a coffee
 
 I'm happy to share this addon with the community for free. If you'd like to support my work, please [sponsor me on GitHub](https://github.com/sponsors/o1y/).
 ## Credits
 
-This addon is an extension of the [Width Fieldtype for Statamic](https://statamic.com/). 
+This addon is an extension of the Width Fieldtype for [Statamic](https://statamic.com/). 
