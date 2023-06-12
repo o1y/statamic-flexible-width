@@ -1,0 +1,35 @@
+{
+    "name": "o1y/statamic-flexible-width",
+    "type": "statamic-addon",
+    "description": "Flexible width fieldtype for Statamic",
+    "license": "MIT",
+    "support": {
+      "issues": "https://github.com/o1y/statamic-flexible-width/issues"
+    },
+    "authors": [
+      {
+          "name": "Oliver Mesieh",
+          "email": "mail@olivermesieh.com",
+          "role": "Developer"
+      }
+    ],
+    "require": {
+      "statamic/cms": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "O1y\\StatamicFlexibleWidth\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Flexible Width",
+            "description": "Statamic Flexible Width addon"
+        },
+        "laravel": {
+            "providers": [
+                "O1y\\StatamicFlexibleWidth\\ServiceProvider"
+            ]
+        }
+    }
+}
