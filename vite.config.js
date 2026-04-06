@@ -1,21 +1,14 @@
-import { defineConfig, loadEnv } from 'vite';
-import laravel from 'laravel-vite-plugin';
-import vue from '@vitejs/plugin-vue2';
+import laravel from 'laravel-vite-plugin'
+import { defineConfig } from 'vite'
+import statamic from '@statamic/cms/vite-plugin';
 
-export default defineConfig(({ mode }) => {
-    const env = loadEnv(mode, process.cwd(), '');
-
-    return {
-        base: '/dist',
-        plugins: [
-            laravel({
-                valetTls: env.VALET_TLS,
-                input: [
-                    'resources/js/addon.js'
-                ],
-                publicDirectory: 'dist',
-            }),
-            vue()
-        ]
-    }
+export default defineConfig({
+    plugins: [
+        statamic(),
+        laravel({
+            hotFile: 'dist/hot',
+            publicDirectory: 'dist',
+            input: ['resources/js/addon.js'],
+        }),
+    ],
 });

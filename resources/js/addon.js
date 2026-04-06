@@ -1,5 +1,5 @@
-import FieldtypesProvider from './fieldtypes/provider'
+import FlexibleWidthFieldtype from './fieldtypes/FlexibleWidthFieldtype.vue'
 
 Statamic.booting(() => {
-  new FieldtypesProvider();
+  Statamic.$components.register('flexible_width-fieldtype', FlexibleWidthFieldtype);
 });

@@ -11,7 +11,7 @@ class FlexibleWidth extends Fieldtype
 
     protected $categories = ['controls'];
     protected $indexComponent = 'tags';
-    protected $icon = 'width';
+    protected $icon = 'fieldtype-width';
 
     protected function configFieldItems(): array
     {
@@ -37,6 +37,18 @@ class FlexibleWidth extends Fieldtype
                         'instructions' => __('statamic::messages.fields_default_instructions'),
                         'type' => 'text',
                         'width' => 50,
+                    ],
+                ],
+            ],
+            [
+                'display' => __('Appearance'),
+                'fields' => [
+                    'size' => [
+                        'display' => __('Size'),
+                        'instructions' => __('statamic::fieldtypes.width.config.size'),
+                        'type' => 'select',
+                        'options' => ['base' => __('Base'), 'lg' => __('Large')],
+                        'default' => 'lg',
                     ],
                 ],
             ],
